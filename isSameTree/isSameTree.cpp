@@ -25,9 +25,12 @@ public:
     void zhong(TreeNode* root,vector<int>&a) 
     {
          if(root==nullptr)
+         {
+            a.push_back(-100);
             return ;
-         zhong(root->left,a);
+         }
          a.push_back(root->val);
+         zhong(root->left,a);
          zhong(root->right,a);
     }
 };
