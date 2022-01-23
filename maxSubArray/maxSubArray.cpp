@@ -4,7 +4,7 @@ public:
         if(nums.size()==0)
         return NULL;
         int sum=0;
-        int ans=-1;
+        int ans=-10000000;
         for(int i=0;i<nums.size();i++)
         {
             if(sum>0)
